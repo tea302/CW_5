@@ -2,15 +2,15 @@
 from flask import Flask, render_template, request, redirect, url_for
 
 from base import Arena
-from classes import unit_classes
+from classes import unit_classes, WarriorClass, ThiefClass
 from equipment import Equipment
 from unit import PlayerUnit, EnemyUnit
 
 app = Flask(__name__)
 
 heroes = {
-    "player": ...,
-    "enemy": ...
+    "player": PlayerUnit(name="Игрок", unit_class=WarriorClass),
+    "enemy": EnemyUnit(name="Компьютер", unit_class=ThiefClass)
 }
 
 arena = Arena()  # TODO инициализируем класс арены
