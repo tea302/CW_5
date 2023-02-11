@@ -18,7 +18,8 @@ class Armor:
 class Weapon:
     id: int
     name: str
-    defence: float
+    max_damage: float
+    min_damage: float
     stamina_per_hit: float
 
     @property
