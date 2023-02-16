@@ -103,7 +103,7 @@ def choose_hero():
         player.equip_armor(Equipment().get_armor(armor_name))
         player.equip_weapon(Equipment().get_weapon(weapon_name))
         heroes['player'] = player
-        return redirect(url_for('chose'))
+        return redirect(url_for('choose_enemy'))
 
 
 @app.route("/choose-enemy/", methods=['post', 'get'])
