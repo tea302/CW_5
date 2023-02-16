@@ -105,7 +105,6 @@ def choose_hero():
         heroes['player'] = player
         return redirect(url_for('choose_enemy'))
 
-
 @app.route("/choose-enemy/", methods=['post', 'get'])
 def choose_enemy():
     # TODO кнопка выбор соперников. 2 метода GET и POST
